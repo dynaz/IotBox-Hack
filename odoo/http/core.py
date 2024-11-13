@@ -37,7 +37,7 @@ if __name__ == '__main__':
     if _cmd_options.server and _cmd_options.server.startswith('gevent'):
         import gevent.monkey; gevent.monkey.patch_all()
 
-import base64, cgi, email.utils, functools, hmac, imp, itertools, mimetypes,\
+import base64, cgi, email.utils, functools, hmac, importlib.util, itertools, mimetypes,\
         os, re, subprocess, sys, tempfile, threading, time, warnings
 
 from datetime import date as datedate, datetime, timedelta
